@@ -1,0 +1,83 @@
+.item0 {
+  grid-area: ad;
+  background-color: aliceblue;
+}
+.item0 li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.item0 li {
+  float: left;
+}
+.item0 li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.item1 {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+  background-image: url(123.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.item2 {
+  grid-area: menu;
+  background-color: darkseagreen;
+}
+.item3 {
+  grid-area: main;
+  background-color: darkcyan;
+}
+.item4 {
+  grid-area: right;
+  background-color: gold;
+}
+.item5 {
+  grid-area: footer;
+  background-color: deeppink;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "ad ad ad ad ad ad"
+    "header header header header header header"
+    "menu main main right right right"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.grid-container > div,
+.grid-container > div > div {
+  padding: 20px 0;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu {
+  background-color: blueviolet;
+}
+
+.adMask {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
